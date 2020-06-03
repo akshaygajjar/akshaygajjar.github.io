@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   color: #777;
   line-height: 1.5;
@@ -41,6 +41,7 @@ body {
 
 p {
   line-height: 2;
+  margin-bottom: 1.75rem;
 }
 
 a:hover {
@@ -206,8 +207,6 @@ button:focus {
 .main-content .welcome {
   font-size: 16px;
   letter-spacing: 4px;
-  /*  font-family:Helvetica;
-  font-family: 'Courier New', Courier, monospace;*/
 }
 
 .main-content .type {
@@ -216,11 +215,11 @@ button:focus {
 }
 
 .main-content .social-icons {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .main-content .social-icons a {
-  padding: 0 10px;
+  padding: 0 14px;
   color: #fff;
 }
 
@@ -325,18 +324,21 @@ canvas {
 }
 
 .about h3 {
-  margin-bottom: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 16px;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
 .about h5 {
-  margin-bottom: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-bottom: 18px;
+  font-weight: 400;
+  color: #2a2a2a;
 }
 
 .about p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #292f33;
+  color: #4a5568;
+  margin-top: 0.95rem;
 }
 
 .about-social-icons {
@@ -415,14 +417,15 @@ canvas {
   background-color: #fff;
 }
 
-.exp-skills h3, .exp-skills h5 {
+.exp-skills h5 {
   color: #fff;
 }
 
 .exp-skills h3 {
   position: relative;
   display: inline-block;
-  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+  font-weight: 200;  
 }
 
 .exp-skills h3::before {
@@ -436,8 +439,8 @@ canvas {
 }
 
 .exp-skills h5 {
-  margin-top: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 26px;
+  font-weight: 350;
 }
 
 .exp-skills ul {
@@ -446,10 +449,12 @@ canvas {
 
 .exp-skills h6 {
   color: #ddd;
+  font-weight: 300;
 }
 
 .skills h6 {
-  margin: 30px 0;
+  margin-top: 26px;
+  margin-bottom: 12px;
 }
 
 .progress-content {
@@ -867,7 +872,6 @@ ul.filter li.filter-active {
 
 .contact h3 {
   color: #fff;
-  font-family: 'Times New Roman', Times, serif;
 }
 
 .contact::before {
@@ -885,9 +889,8 @@ ul.filter li.filter-active {
 }
 
 .contact-location, .contact-email, .contact-phone {
-  font-weight: bold;
+  font-weight: 400;
   color: #fff;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 input, textarea {
@@ -912,9 +915,9 @@ textarea {
 #submit {
   width: auto;
   padding: 8px 60px;
-  border: none;
+  border: #015d6d inset;
   color: #fff;
-  background-color: rgba(0, 98, 102, 0.9);
+  background-color: #006266e6;
   cursor: pointer;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -923,36 +926,28 @@ textarea {
 }
 
 #submit:hover {
-  border-color: #e84118;
-  background-color: #e84118;
+  border-color: white outset;
+  background-color: #000000;
 }
 
 .contact i.fa {
-  margin-right: 5px;
+  margin-right: 4px;
 }
 
 .numscroller {
   font-size: 1.8em;
   font-weight: 600;
+  color: #718096;
 }
-
-/*footer {
-  height: 40px;
-  line-height: 40px;
-  width: 100%;
-  color: aqua;
-}*/
 
 .heart {
   color: red;
-  font-size: 24px;
+  font-size: 16px;
 }
 
-.creditSection {
-  margin-top: 2px;
-  background-color: rgba(0, 98, 102, 0.9);
-  color: black;
-  line-height: 30px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  letter-spacing: 1px;
+.creditSection { 
+  background-color:black;
+  letter-spacing: 0.2px;
+  padding-top: 4px;
+  border-top: #4c9900 solid;
 }
