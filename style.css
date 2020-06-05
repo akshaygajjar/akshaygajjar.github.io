@@ -216,15 +216,39 @@ button:focus {
 
 .main-content .social-icons {
   margin-top: 40px;
+  font-size: 24px;
 }
 
 .main-content .social-icons a {
-  padding: 0 14px;
-  color: #fff;
+  margin: 12px;
 }
 
-.main-content .social-icons a:hover {
-  color: #fff;
+.main-content .social-icons a i {
+  transition: all 0.3s linear;
+}
+
+.main-content .social-icons a:hover i {
+  transform: scale(1.4);
+}
+
+.main-content .social-icons a .facebook:hover {
+  color: #3b5998;
+}
+
+.main-content .social-icons a .instagram:hover {
+  color: #517fa4;
+}
+
+.main-content .social-icons a .telegram:hover {
+  color: #0088cc;
+}
+
+.main-content .social-icons a .github:hover {
+  color: #4078c0;
+}
+
+.main-content .social-icons a .twitter:hover {
+  color: #00aced;
 }
 
 .cta {
@@ -243,31 +267,34 @@ button:focus {
   -o-transition: all 0.5s ease;
 }
 
-.cta-portfolio {
-  /* background-color: #e84118; */
-  border: 1px solid #e84118;
+.face-button {
+  margin-top: 18px;
+  height: 45px;
+  display: inline-block;
+  border: 1px solid #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  color: #e84118;
+  overflow: hidden;
 }
-
-.cta-portfolio::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
+.face-button .icon {
+  margin-right: 6px;
+}
+.face-button .face-primary,
+.face-button .face-secondary {
+  display: block;
+  padding: 0 32px;
+  line-height: 45px;
+  transition: margin 0.4s;
+}
+.face-button .face-primary {
   background-color: #e84118;
-  content: "";
-  z-index: -1;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
+  color: #fff;
 }
-
-.cta-portfolio:hover {
-  border-color: #fff;
-}
-
-.cta-portfolio:hover::before {
+.face-button:hover .face-primary {
+  margin-top: -45px;
   left: 100%;
 }
 
